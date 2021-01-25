@@ -28,7 +28,7 @@ public class Test1{
 		yamada.sayHello();
 		yamada.sayFavorite();
 
-		//System.out.println(yamada.name);
+		System.out.println(yamada.name);
 		
 		Student tanaka = new Student();
 		//tanaka.name = "Tanaka Masahiko";

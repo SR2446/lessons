@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>text2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>who is the hoomroom teacher of our class</h1>
+	<button class="yes">tanaka</button>
+	<button class="dame">yamamoto</button>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('button.yes').on('click',function(){
+				$('h1').text('CORRECT')
+			});
+			})
+		$(function(){
+			$('button.dame').on('click',function(){
+				$('h1').text('WRONG')
+		});
+		})
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jstest</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>jstest: ALOHA</h1>
+	<hr>
+	<button onClick="getRandomColor()">color</button>
+<!-- <button>change color</button> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- #Number1 -->
+<!-- <script>
+	alert("ALOHA")
+	$(function(){
+		$('button').on('click',function(){
+			$('h1').css('color','green');
+		});
+	})
+</script> -->
+<!-- Number 2
+<script>
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+   $('h1').css('color',color);
+}
+</script> -->
+<script>
+// Number 3
+function getRandomColor() {
+var randomColorHaxValues = Math.floor(Math.random()*16777215).toString(16);
+
+$('h1').css('color',randomColorHaxValues);
+
+var randomColorRgbValues = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+}
+</script>
+</body>
+</html>

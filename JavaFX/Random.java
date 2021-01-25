@@ -4,8 +4,9 @@ import java.util.Scanner;
 public class Random {
   public static void main ( String[] args ) {
     
+
     Random random = new Random();
-    int target = random.nextInt( 10 );
+    int target = random.nextInt();
     
     Scanner sc=new Scanner(System.in);
     System.out.print( "your answer :" );

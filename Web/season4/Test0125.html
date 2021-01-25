@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>クイズ</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>クイズ with jquiry</h1>
+<hr>
+<p>
+「馬場」名前の意味はなんですか？
+</p>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function(){
+		$("p").on("click",function(){
+			$("p").text("馬をのるとこる");
+			});
+		})
+</script>
+</body>
+</html>
