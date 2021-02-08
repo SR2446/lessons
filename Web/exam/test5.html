@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test5</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Image</h1>
+	<hr>
+	<img id="naruto" src="naruto.png" width="300" height="400">
+	<img id="nobita" src="nobita.png" width="300" height="400">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script >
+		$(function(){
+			var state = 0;
+		$("img").on("click",function(){
+			 if ( state == 0 ) {
+       			$("#naruto").attr("src","nobita.png");
+       			$("#nobita").attr("src","naruto.png");
+       			state = 1;
+    		 }else
+    		 {
+    		 	$("#naruto").attr("src","naruto.png");
+    		 	$("#nobita").attr("src","nobita.png");
+    		 	state = 0;
+    		 }
+			
+		});
+		})
+		
+
+	</script>
+</body>
+</html>

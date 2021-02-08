@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test4</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Image</h1>
+	<h2>Hide</h2>
+	<hr>
+	<img src="naruto.png" width="300" height="400">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script >
+		$(function(){
+		$("h1").on("click",function(){
+			$("h1").hide();
+			});
+		})
+
+		$(function(){
+		$("h2").on("click",function(){
+			$("h2").hide();
+			});
+		})
+
+		$(function(){
+		$("img").on("click",function(){
+			$("img").hide();
+			});
+		})
+
+	</script>
+</body>
+</html>

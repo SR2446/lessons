@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8">
+
+	<style >
+		
+		#maguro{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Un-orderd list</h1>
+
+	<hr>
+
+	<ul>
+		
+		<li id="buri">ぶり</li>
+		<li id="hamachi">はまち</li>
+		<li id="tai">たい</li>
+		<li id="maguro">まぐろ</li>
+		<li id="komada">こまだ</li>
+	</ul>
+	<hr>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("li").on("click",function(){
+				$(this).hide()
+				});
+			})
+		
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquiry </title>
+	<meta charset="utf-8">
+
+	<style >
+		.blue {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>jquiry test</h1>
+
+	<hr>
+
+	<h2>List</h2>
+
+	<ol>
+		
+		<li id="apple">Apple</li>
+		<li id="banana">Banana</li>
+		<li id="grape">Grape</li>
+		<li id="berry">Strawberry</li>
+	</ol>
+
+	<hr>
+
+	<img src="naruto.png" width="300" height="400">
+	<h3>naruto</h3>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script >
+		$(function(){
+		$("h1").on("click",function(){
+			//$("h1").css("color","blue");
+			$("h1").addClass("blue");
+			});
+		})
+
+		// $(function(){
+		// $("img").on("click", function(){
+  //           $(this).attr("src","nobita.png");
+		// 	});
+		// })
+
+		$(function(){
+
+			const images=[
+				"naruto.png",
+				"nobita.png",
+				"amazon.png",
+				"doremon.png",
+				"guko.png"]
+
+			const titles = [
+				"naruto",
+				"nobita",
+				"amazon",
+				"doremon",
+				"guko"]
+
+		 	let num = 0
+           
+           	$("img").on("click", function(){
+             	
+             	num++
+           	if ( num > images.length ) {
+       			num = 0;
+    		 	}
+    		 	$("img").attr("src", images[ num ]);
+    		 	$("h3").text(titles[num]);
+    		 });
+
+
+    	})
+
+		$(function(){
+			let apple = 0 ;
+			const fruits = ["Apple","Banana","Grabe","Strawberry"]
+			$("li").on("click", function(){
+     			if (apple == 1){
+     				$(this).text("りんご").addClass("blue")
+     				apple =0;
+     			}else{
+     				const num = $(this).index();
+     				$(this).text("Apple").removeClass("blue")
+     				apple =1;
+     			}
+     		});
+     	})
+		
+     	// $("#banana").on("click", function(){
+     	// 	$("#banana").text("バナナ").css("color","red");
+     	// });
+
+     	// $("#grape").on("click", function(){
+     	// 	$("#grape").text("ぶど").css("color","pink");
+     	// });
+
+     	// $("#berry").on("click", function(){
+     	// 	$("#berry").text("ベリー").css("color","green");
+     	// });
+
+     	$(function(){
+     		$("body").on("click", function(e){
+        		$("h1").text( e.clientX );
+      		});
+    	})
+
+
+
+
+	</script>
+</body>
+</html>

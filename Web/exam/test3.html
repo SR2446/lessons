@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test3</title>
+	<meta charset="utf-8">
+	<style >
+		.size{
+			width: 500px;
+			height: 600px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Image</h1>
+	<hr>
+	<img src="naruto.png" width="300" height="400">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script >
+		$(function(){
+		$("img").on("click",function(){
+			$("img").addClass("size");
+			});
+		})
+
+	</script>
+</body>
+</html>
