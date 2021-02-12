@@ -1,6 +1,6 @@
 public class Test4{
     public static void main( String[] args ) {
-      Person p = new Person( "Yoshino", "kawasaki", 57 ,true );
+      Person p = new Person( "Yoshino", "kawasaki", 57 ,"Action movie" );
       p.sayHello();
     }
   }
@@ -41,7 +41,8 @@ public class Test4{
 		}
 	 }
 	 public void setAge ( int data ){
-		if( age >= 15 ){
+		if( data >= 15 ){
+
 		 this.age = data ;
 		} else {
 		handleError( "Age" );

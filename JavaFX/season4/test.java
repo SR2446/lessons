@@ -8,7 +8,7 @@ import javafx.animation.Animation;
    import javafx.scene.paint.Color;
    import javafx.scene.shape.Rectangle;
    
-   public class test extends Application {
+   public class Test extends Application {
      // main()
      public static void main( String[] args ) {
        launch( args );
