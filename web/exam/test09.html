@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Slide Show</h1>
+
+	<hr>
+
+	<h2>Naruto</h2>
+
+	<img src="naruto.png" width="300" height="400">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+	$(function(){
+
+		const images=[
+			"naruto.png",
+			"nobita.png",
+			"doremon.png",
+			"guko.png"
+
+		]
+
+		const names=[
+			"Naruto",
+			"Nobita",
+			"Doremon",
+			"Guko"
+
+		]
+
+		 {
+		 	let num = 0
+           
+           $("img").on("click", function(){
+             $("img").attr("src", images[ num ]);
+             num++
+           if ( num > images.length ) {
+       			num = 0;
+    		 };
+    		})
+       	 }
+       	 {
+       	 	let num = 0
+
+    		 $("img").on("click", function(){
+             $("h2").text( names[ num ] );
+             num++
+
+             if ( num > names.length ) {
+       			num = 0;
+    		 };
+		
+			});
+    	 }
+		})
+</script>
+</body>
+</html>
