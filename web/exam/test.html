@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8">
+
+	<style >
+		
+		#maguro{
+			color: red;
+		}
+		table, th, td {
+ 			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Un-orderd list</h1>
+
+	<hr>
+
+	<ul>
+		
+		<li id="buri">ぶり</li>
+		<li id="hamachi">はまち</li>
+		<li id="tai">たい</li>
+		<li id="maguro">まぐろ</li>
+		<li id="komada">こまだ</li>
+	</ul>
+
+	<hr>
+
+	<table>
+	  <tr>
+    	<th> ひらがな </th>
+    	<th> かんじ </th>
+  	  </tr>
+
+  	  <tr>
+    	<td> ぶり </td>
+    	<td> 鰤 </td>
+  	　</tr>
+  	　<tr>
+    	<td> はまち </td>
+    	<td> 魬 </td>
+  	　</tr>
+  	　<tr>
+    	<td> たい </td>
+    	<td> 鯛 </td>
+  	　</tr>
+  	　<tr>
+    	<td> まぐろ </td>
+    	<td> 鮪 </td>
+  	　</tr>
+  	　<tr>
+    	<td> こまだ </td>
+    	<td> 小鰭 </td>
+  	　</tr>
+
+	</table>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("li").on("click",function(){
+				$(this).css("font-size","50pt")
+				});
+			})
+		$(function(){
+			$("tr").on("click",function(){
+				$(this).css("color","blue")
+				});
+			})
+
+
+	</script>
+</body>
+</html>
