@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('Hello!!')">click</button>
+    <button onclick="showMessage('rony')">click</button>
+
+    <h2>price</h2>
+    <input id="price" type="text" onchange="calculate()">
+
+    <h2>Message</h2>
+    <p id="message"></p>
+
+    <h2>Weapon shop</h2>
+    <p id="item_name">AK47</p>
+    <p id="item_price">150</p>
+    <p>
+        <input type="number" id="amount">
+    </p>
+    <p>
+        <button onclick="buy()">buy</button>
+    </p>
+
+    <h2>Timer</h2>
+    <button id="timer" onclick="startTimer()">Start</button>
+    <button id="stop" onclick="stopTimer()">Stop</button>
+    <div id="count">0</div>
+
+    <div id="box" style="width: 20px;height: 30px;background-color: aqua;"></div>
+
+
+    <script src="js/event.js"></script>
+</body>
+</html>

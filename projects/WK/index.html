@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>連想配列</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--<marquee behavior="normal" direction="right">
+<img src="img/archer.jpg">
+</marquee>-->
+
+        <div id="characterProfile">
+            <table class ="characterBox">
+                <tr>
+                    <td rowspan="2"><div id="profilCharacter"></div></td>
+                    <td><p id="charName"></p></td>
+                </tr>
+                <tr>
+                    <td><p id="charJob"></p></td>
+                </tr>
+            </table>
+           
+        </div>
+        <div id="block"></div>
+            <div>
+            <table id="characterStatus">
+                <tr>
+                    <th colspan="2">Character Status !</th>
+                </tr>
+                <tr>
+                    <td >Character Level :</td>
+                    <td id="charLevel"></td>
+                </tr>
+                <tr>
+                    <td>Character EXP :</td>
+                    <td id="charEXP"></td>
+                </tr>
+                <tr>
+                    <td>Character HP :</td>
+                    <td id="charHP"></td>
+                </tr>
+                <tr>
+                    <td>Character MP :</td>
+                    <td id="charMP"></td>
+                </tr>
+            </table>
+            <div id="buttonOption">
+            <button id="showStat" onclick="showStat()">Update Status !</button>
+            <button id="levelup" onclick="levelup()">Level up</button>
+        </div>
+        </div>
+        </div>
+    
+    <div id="userAddBox">
+        ユーザー追加
+    </div>
+    <div id = "userAddColumn">
+        <table id="userAddForm">
+            <tr>
+                <td >氏名 :</td>
+                <td><input type="text"  id="nameUser"></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td ><input type="text" id="emailUser"></td>
+            </tr>
+            <tr>
+                <td>パスワード : </td>
+                <td><input type="password"  id="passwordUser"></td>
+            </tr>
+        </table>
+
+        <div id="userbuttonOption">
+            <button id="userAdd" onclick="userAdd()"> 登録</button>
+            <button id="userShow" onclick="userShow()">提示</button>   
+        </div>
+        <table id="userStatus">
+            <tr>
+                <th colspan="2">User Status !</th>
+            </tr>
+            <tr>
+                <td >User Name :</td>
+                <td><span id="showUserName"></span></td>
+            </tr>
+            <tr>
+                <td>User Email :</td>
+                <td id="showUserEmail"></td>
+            </tr>
+            <tr>
+                <td>Password  :</td>
+                <td id="showUserPassword"></td>
+            </tr>
+        
+        </table>
+
+
+
+    <script src="js/array.js"></script>
+</body>
+</html>

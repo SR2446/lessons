@@ -1,0 +1,52 @@
+.characterBox , th, td {
+    border: 0px solid black;
+}
+
+#charName
+{
+    font-size: 25pt;
+    font-weight: bolder;
+}
+#charJob
+{
+    font-size: 15pt;
+    font-weight: bold   ;
+}
+#block
+{
+    background-color: cadetblue;
+    height: 10pt;
+    border-radius: 3pt;
+}
+#characterStatus,#buttonOption
+{
+    padding-top: 5pt;
+    padding-left : 40%;
+    
+}
+#buttonOption
+{
+    padding-bottom: 10pt;
+}
+
+#characterStatus
+{
+    padding-top: 15pt;
+}
+#characterStatus th
+{
+
+    font-size: 20pt;
+    background-color: cadetblue;
+    color: white;
+}
+
+#userAddBox
+{
+    
+    background-color: cadetblue;
+    color: white;
+    font-size: 20pt;
+    padding-left: 5pt;
+    
+}

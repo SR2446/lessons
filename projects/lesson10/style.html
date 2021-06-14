@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- p#message.message -->
+    <p id="message" class="message">
+        Hello,Yokohama!
+    </p>
+    <div>
+        <button onclick="add()">Add</button>
+        <button onclick="remove()">Remove</button>
+        <button onclick="toggle()">Toggle</button>
+        <button onclick="replace()">Replace</button>
+    </div>
+
+    <div>
+        <p id="alert">注意!</p>
+    </div>
+
+    <div id="display"></div>
+
+    <div class="menu">
+        <a href="#" onmouseover="over(this)" onmouseout="out(this)">Home</a>
+        <a href="#" onmouseover="over(this)" onmouseout="out(this)">About</a>
+        <a href="#" onmouseover="over(this)" onmouseout="out(this)">Contact</a>
+    </div>
+
+    <body>
+        <h3>Name</h3>
+        <input type="text" id="user_name">
+        <p id="error_user_name"></p>
+    
+        <h3>ふりがな</h3>
+        <input type="text" id="user_furigana">
+        <p id="error_user_furigana"></p>
+        
+        <h3>郵便番号</h3>
+        <input type="text" id="user_zip">
+        <p id="error_user_zip"></p>
+    
+        <h3>電話番号</h3>
+        <input type="text" id="user_tel">
+        <p id="error_user_tel"></p>
+        <div>
+            <button onclick="regist()">登録</button>
+        </div>
+
+    <script src="js/style.js"></script>
+</body>
+</html>
