@@ -1,0 +1,2 @@
+* = shift  + 8
+^ = shift + 6
